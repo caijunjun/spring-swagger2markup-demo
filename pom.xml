@@ -25,7 +25,7 @@
         <asciidoctor.html.output.directory>${project.build.directory}/asciidoc/html</asciidoctor.html.output.directory>
         <asciidoctor.pdf.output.directory>${project.build.directory}/asciidoc/pdf</asciidoctor.pdf.output.directory>
 
-        <swagger.input>${swagger.output.dir}/swagger.json</swagger.input>
+        <swagger.input>http://127.0.0.1:8080/xxx/v2/api-docs?group=api</swagger.input>
     </properties>
 
     <pluginRepositories>
@@ -233,6 +233,8 @@
                     <sourceDirectory>${asciidoctor.input.directory}</sourceDirectory>
                     <sourceDocumentName>index.adoc</sourceDocumentName>
                     <attributes>
+						<pdf-style>${project.basedir}/lib/themes/cn-theme.yml</pdf-style>
+						<pdf-fontsdir>${project.basedir}/lib/fonts</pdf-fontsdir>
                         <doctype>book</doctype>
                         <toc>left</toc>
                         <toclevels>3</toclevels>
