@@ -25,7 +25,7 @@
         <asciidoctor.html.output.directory>${project.build.directory}/asciidoc/html</asciidoctor.html.output.directory>
         <asciidoctor.pdf.output.directory>${project.build.directory}/asciidoc/pdf</asciidoctor.pdf.output.directory>
 
-        <swagger.input>http://127.0.0.1:8080/xxx/v2/api-docs?group=api</swagger.input>
+        <swagger.input>${swagger.input}</swagger.input>
     </properties>
 
     <pluginRepositories>
